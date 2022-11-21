@@ -47,6 +47,6 @@ public class CustomerService {
 
         Customer customer = customerRepository.findById(registrationCode).orElseThrow(() ->
                 new IllegalStateException("Customer with registrationCode:" + registrationCode + " not found"));
-        customer.setEmail(telephone);
+        customer.setTelephone(telephone);
     }
 }
