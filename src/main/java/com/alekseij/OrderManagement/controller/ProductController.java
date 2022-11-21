@@ -42,9 +42,12 @@ public class ProductController {
     @PutMapping(path = "{productId}")
     public void updateProduct(@PathVariable ("productId") Long productId, @RequestParam(required = false) String name,
                               @RequestParam(required = false) String skuCode,@RequestParam(required = false) Long unitPrice) {
-        productService.updateProductName(productId, name);
-        productService.updateProductSkuCode(productId, skuCode);
-        productService.updateProductPrice(productId, unitPrice);
+        if (name != null)
+            productService.updateProductName(productId, name);
+        if (skuCode != null)
+            productService.updateProductSkuCode(productId, skuCode);
+        if (unitPrice != null)
+            productService.updateProductPrice(productId, unitPrice);
 
     }
 

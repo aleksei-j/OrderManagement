@@ -38,8 +38,10 @@ public class CustomerController {
     @PutMapping(path = "{registrationCode}")
     public void updateCustomer(@PathVariable ("registrationCode") Long registrationCode, @RequestParam(required = false) String email,
                                @RequestParam(required = false) String telephone) {
-        customerService.updateCustomerTelephone(registrationCode, telephone);
-        customerService.updateCustomerEmail(registrationCode, email);
+        if (telephone != null)
+            customerService.updateCustomerTelephone(registrationCode, telephone);
+        if (email != null)
+            customerService.updateCustomerEmail(registrationCode, email);
     }
 
 }

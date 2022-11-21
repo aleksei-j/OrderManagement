@@ -1,6 +1,7 @@
 package com.alekseij.OrderManagement.controller;
 
 import com.alekseij.OrderManagement.model.Order;
+import com.alekseij.OrderManagement.model.Product;
 import com.alekseij.OrderManagement.service.OrderService;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,5 +39,10 @@ public class OrderController {
     @DeleteMapping(path = "{orderId}")
     public void deleteOrder(@PathVariable ("orderId") Long orderId) {
         orderService.deleteOrder(orderId);
+    }
+
+    @PostMapping
+    private void addProduct(long productId, Product product, long productQuantity) {
+
     }
 }
