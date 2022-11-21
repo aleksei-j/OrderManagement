@@ -19,7 +19,7 @@ public class OrderService {
                 new IllegalStateException("Order with orderId:" + orderId + " not found"));
     }
 
-    public List<Order> getOrder() {return orderRepository.findAll(); }
+    public List<Order> getOrders() {return orderRepository.findAll(); }
 
     public void postNewOrder(Order order) {
         orderRepository.save(order); }
