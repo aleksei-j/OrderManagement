@@ -1,12 +1,6 @@
 package com.alekseij.OrderManagement.config;
 
-import com.alekseij.OrderManagement.model.Customer;
-import com.alekseij.OrderManagement.service.CustomerRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.List;
 
 @Configuration
 public class CustomerConfig {
