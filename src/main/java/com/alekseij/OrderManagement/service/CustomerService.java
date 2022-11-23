@@ -1,6 +1,7 @@
 package com.alekseij.OrderManagement.service;
 
 import com.alekseij.OrderManagement.model.Customer;
+import com.alekseij.OrderManagement.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

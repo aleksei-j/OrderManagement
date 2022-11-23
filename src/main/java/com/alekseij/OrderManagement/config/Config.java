@@ -2,9 +2,8 @@ package com.alekseij.OrderManagement.config;
 
 import com.alekseij.OrderManagement.model.Customer;
 import com.alekseij.OrderManagement.model.Product;
-import com.alekseij.OrderManagement.service.CustomerRepository;
-import com.alekseij.OrderManagement.service.OrderRepository;
-import com.alekseij.OrderManagement.service.ProductRepository;
+import com.alekseij.OrderManagement.repository.CustomerRepository;
+import com.alekseij.OrderManagement.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

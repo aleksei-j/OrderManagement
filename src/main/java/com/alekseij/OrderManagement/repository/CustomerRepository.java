@@ -1,4 +1,4 @@
-package com.alekseij.OrderManagement.service;
+package com.alekseij.OrderManagement.repository;
 
 import com.alekseij.OrderManagement.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,7 @@
 package com.alekseij.OrderManagement.service;
 
 import com.alekseij.OrderManagement.model.Order;
+import com.alekseij.OrderManagement.repository.OrderRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
